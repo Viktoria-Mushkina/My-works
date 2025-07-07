@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    margin-top: 80px;
+    max-width: 700px;
+    margin: 80px auto 30px;
+    line-height: 45px;
+    font-weight: normal;
+}
+p{
+    max-width: 900px;
+    margin: 0 auto 40px;
+    line-height: 30px;
+}
+.conteiner {
+    margin: 0 auto;
+    color: rgb(99, 99, 99);
+}
+.box_inner {
+    text-align: center;
+}
+.icon-box {
+    margin-bottom: 60px;
+}
+.icon-box .fa {
+    color: rgb(38, 150, 202);
+    font-size: 80px;
+    margin: 0 50px;
+}
+img{
+    width: 350px;
+    height: 200px;
+}
+.inner{
+    display: flex;
+    justify-content: center;
+}
+.text{
+    width: 500px;
+    text-align: justify;
+    margin-right: 60px;
+    color:  rgb(99, 99, 99);
+}
+.icons i{
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(116, 212, 164);
+    border: 2px solid rgb(116, 212, 164);
+    margin-bottom: 30px;
+}
+.icons i:hover{
+    color: white;
+    background-color: rgb(116, 212, 164);
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(38, 150, 202);
+    padding: 10px 20px;
+}
+a:hover{
+    color: aliceblue;
+    border-radius:5px ;
+    background-color: rgb(38, 150, 202);
+}
