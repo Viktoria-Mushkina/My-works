@@ -270,9 +270,9 @@ a{
     align-items: center;
     width: 40px;
     height: 40px;
+    margin: 20px 10px 10px 15px;
     border: 1px solid #130E27;
     border-radius: 50%;
-    margin: 20px;
     font-size: 25px;
     color: #130E27;
 }
@@ -283,5 +283,27 @@ a{
     background-color: #C62314;
     color:#FFFFFF
 }
+.home a {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+[mytitle]:after{
+    content: '';
+    transition: 0.5s;
+}
+
+[mytitle]:hover:after {
+    content: attr(mytitle);
+    padding: 5px 10px;
+    background-color: #130E27;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    margin: 20px 10px 10px 15px;
+}
+
 
 
