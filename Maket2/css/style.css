@@ -288,11 +288,12 @@ a{
     height: 40px;
     align-items: center;
     color: #FFFFFF;
+    text-wrap: nowrap;
 }
 
 [mytitle]:after{
     content: '';
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 [mytitle]:hover:after {
