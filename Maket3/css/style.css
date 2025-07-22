@@ -47,6 +47,13 @@ body{
     border: none;
     cursor: pointer;
 }
+.fa-long-arrow-left{
+    margin-left: 20px;
+    font-size: 25px;
+    color: #000;
+    position: fixed;
+}
+
 
 /* Block */
 .services .block {
