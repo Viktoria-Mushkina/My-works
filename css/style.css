@@ -21,7 +21,9 @@ body{
 }
 .links{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 30px;
     font-size: 40px;
     margin: 40px;
 }
