@@ -86,6 +86,17 @@ h1{
 .bottom a:hover{
   transform: scale(1.1);
 }
+.fa-home {
+  font-size: 40px;
+  margin: 20px;
+  color: var(--accent-1);
+  transition: 1s;
+}
+.fa-home:hover{
+  transition: 1s;
+  color: var(--accent-2);
+}
+
 @media screen and (max-width:1344px){
   .card_inner{
       grid-template-columns: repeat(3,1fr);

@@ -83,6 +83,12 @@ body{
   color: rgb(58, 121, 255);
   background: rgb(210, 225, 255);
 }
+.fa-home{
+  color: rgb(61, 79, 159);
+  margin: 20px;
+  font-size: 25px;
+  position: fixed;
+}
 /* Stats */
 .stats {
   background: linear-gradient(90deg, rgb(94, 128, 255) 50%,rgb(224, 233, 255) 0%);

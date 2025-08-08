@@ -116,6 +116,16 @@ body{
   max-width: 734px;
   margin: 0 auto;
 }
+.material-icons{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+.material-icons:hover{
+  transition: 1s;
+  transform: scale(1.3);
+}
+
 /* About us */
 .about {
   min-height: 1080px;
@@ -364,7 +374,7 @@ details[open] summary{
 }
 /* Contacts */
 .contacts {
-  padding: 97px 0 134px;
+  padding: 97px 0 89px;
 }
 .contacts__h2 {
   text-align: center;
