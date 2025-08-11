@@ -5,21 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Revalia&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <title>WD</title>
 </head>
 <body>
-  <header class="header">
+  <div class="sidepanal">
+    <ul>
+      <li><a href="../index.html"><i class="material-icons">home</i></a></li>
+      <li><a href="#main"><i class="material-icons">expand_less</i></a></li>
+      <li><a href="#footer"><i class="material-icons">expand_more</i></a></li>
+    </ul>
+  </div>
+  <header class="header" id="main">
     <div class="container">
       <div class="header__flex">
         <div class="WD_logo">wd</div>
         <ul class="header__flex-items">
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Об авторе</a></li>
-          <li><a href="#">Работы</a></li>
-          <li><a href="#">Процесс</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="#main">Главная</a></li>
+          <li><a href="#me">Об авторе</a></li>
+          <li><a href="#skill">Работы</a></li>
+          <li><a href="#works">Процесс</a></li>
+          <li><a href="#contact">Контакты</a></li>
         </ul>
       </div>
       <div class="first-screen__flex">
@@ -32,7 +40,7 @@
       </div>
     </div>
   </header>
-  <section class="about">
+  <section class="about" id="me">
     <div class="container">
       <h2 class="text-h2">Обо мне</h2>
       <p class="text-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб&#8209;дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
@@ -86,7 +94,7 @@
       </div>
     </div>
   </section>
-  <section class="skills">
+  <section class="skills" id="skill">
     <div class="skills__flex">
       <div class="skills__right">
         <h2 class="text-h2">Мои навыки</h2>
@@ -109,11 +117,13 @@
       <img src="../img/WD_img.jpg" alt="WD_img" class="skills__img">
     </div>
   </section>
-  <section class="work">
+  <section class="work" id="works">
     <div class="container">
       <h2 class="text-h2">Как я работаю</h2>
       <p class="text-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб&#8209;дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-      <video src="" poster="../img/WD_poster.png"></video>
+      <video poster="../img/WD_poster.png" controls="controls">
+        <source src="video/typing.mp4" type='video/mp4;"'>
+      </video>
     </div>
   </section>
   <section class="projects">
@@ -162,7 +172,7 @@
       </div>
     </div>
   </section>
-  <section class="form">
+  <section class="form" id="contact">
     <div class="container">
       <h2 class="text-h2">Хотите веб-сайт?</h2>
       <p class="text-p">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб&#8209;дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
@@ -178,7 +188,7 @@
         </form>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
       <div class="footer__flex">
         <div class="footer__flex-items">
@@ -186,9 +196,9 @@
           <h4 class="text-h4">© 2018. Все права защищены.</h4>
         </div>
         <div class="footer__flex-items1">
-          <img src="../img/vk.svg" alt="VK" class="footer__img">
-          <img src="../img/vk.svg" alt="VK" class="footer__img">
-          <img src="../img/vk.svg" alt="VK" class="footer__img">
+          <a href="#"><img src="../img/vk.svg" alt="VK" class="footer__img"></a>
+          <a href="#"><img src="../img/vk.svg" alt="VK" class="footer__img"></a>
+          <a href="#"><img src="../img/vk.svg" alt="VK" class="footer__img"></a>
         </div>
       </div>
     </div>

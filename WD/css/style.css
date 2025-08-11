@@ -61,6 +61,17 @@ body{
   color: var(--gray-color);
   margin-bottom: 80px;
 }
+/* Sidepanal */
+.sidepanal{
+  position: fixed;
+  background-color: rgba(255,255,255, 0.8);
+  top: 25%;
+  z-index: 3;
+}
+.material-icons{
+  font-size: 30px;
+  color: var(--dark_blue-color);
+}
 /* First-screen */
 .header {
   background-color: var(--bg-color);
@@ -195,19 +206,12 @@ body{
 .card1,.card2 {
   cursor: pointer;
   background-image: url(../../img/WD_photo1.jpg);
-  width: 480px;
-  max-width: 100%;
-  height: 480px;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-size: cover;
-}
-.card-view-icon {
-  z-index: 2;
-  opacity: 0;
-  transition: 0.5s;
+  background-position: center;
 }
 .card-filter {
   background-color: rgba(52, 84, 122);
@@ -219,6 +223,16 @@ body{
 }
 .card2 {
   background-image: url(../../img/WD_photo2.jpg);
+}
+
+.card-view-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: 0.5s;
 }
 .card1:hover .card-view-icon,.card2:hover .card-view-icon {
   opacity: 1;
@@ -323,11 +337,23 @@ body{
   font-size: 13px;
 }
 .footer__flex-items1 {
+  cursor: pointer;
   display: flex;
   gap: 22px;
 }
+.footer__flex-items1 a{
+  transition: 1s ease;
+}
+.footer__flex-items1 a:hover{
+  transform: scale(1.2);
+}
 
 /* Media */
+@media(prefers-reduced-motion: no-preference){
+  :root{
+    scroll-behavior: smooth;
+  }
+}
 @media  screen and (max-width:1280px) {
   .header, .about, .skills, .work, .partners,.form,.footer{
     padding-left: 20px;
